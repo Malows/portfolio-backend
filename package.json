@@ -1,0 +1,24 @@
+{
+    "name": "portfolio-backend",
+    "version": "1.0.0",
+    "description": "Hold comments and contact information for my portfolio",
+    "main": "index.js",
+    "repository": "git@github.com:Malows/portfolio-backend.git",
+    "author": "Malows",
+    "license": "MIT",
+    "scripts": {
+        "start": "fastify start app.js",
+        "test": "standard && tap test/*.test.js test/*/*.test.js test/*/*/*.test.js",
+        "dev": "fastify start -l info -P app.js",
+        "lint": "standard --fix"
+    },
+    "dependencies": {
+        "fastify": "^1.2.1",
+        "fastify-cli": "^0.16.0",
+        "fastify-autoload": "^0.3.0"
+    },
+    "devDependencies": {
+        "standard": "^11.0.1",
+        "tap": "^11.1.3"
+    }
+}
